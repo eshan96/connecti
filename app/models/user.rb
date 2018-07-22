@@ -27,5 +27,11 @@ def self.from_omniauth(data)
 	return user
 end
 
-   
+    def set_auth_token
+      self.auth_token = SecureRandom.uuid
+
+      self.save
+    end
+
+
 end

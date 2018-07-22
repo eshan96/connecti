@@ -5,6 +5,7 @@ namespace :api do
 
   namespace :v1 do
     get 'home', to: 'posts#home'
+    post 'users/sign_in', to: 'users#sign_in'
   end
 
   namespace :v2 do
@@ -15,6 +16,8 @@ namespace :api do
 end
 
 
+
+ 
 
 
   get 'users/profile/:id', to: 'users#profile'
